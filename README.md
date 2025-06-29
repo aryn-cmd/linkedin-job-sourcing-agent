@@ -1,10 +1,10 @@
-# 🚀 LinkedIn Recruitment Agent
+#  LinkedIn Recruitment Agent
 
 > **Note:** By default, the system uses OpenAI's `gpt-3.5-turbo` for outreach messages. You can also use Anthropic Claude or switch to GPT-4 if you have access.
 
 A comprehensive AI-powered tool for finding, scoring, and outreaching to LinkedIn candidates based on job postings. Features job parsing, profile search, AI scoring, and AI-powered personalized outreach messages using OpenAI GPT-4 or Anthropic Claude.
 
-## 🎯 Features
+##  Features
 
 - **Job Parsing**: Extract detailed job requirements from LinkedIn job postings
 - **Profile Search**: Find relevant candidates using Google search and RapidAPI
@@ -14,13 +14,13 @@ A comprehensive AI-powered tool for finding, scoring, and outreaching to LinkedI
 - **Export Results**: Export candidate data to JSON format
 - **Demo Mode**: Test the system with sample data
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.8+
 - OpenAI API key (for GPT-4 messages) - **OR** - Anthropic API key (for Claude messages)
 - RapidAPI key (for LinkedIn profile data)
 
-## 🛠️ Installation
+##  Installation
 
 1. **Clone the repository:**
 ```bash
@@ -97,7 +97,7 @@ The system includes a RapidAPI key for LinkedIn profile data. If you need your o
 3. Subscribe to the API
 4. Replace the key in `config.py`
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Demo Mode (No API Keys Required)
 ```bash
@@ -129,7 +129,7 @@ python main.py --anthropic "https://www.linkedin.com/jobs/view/4256398535"
 python main.py --max-candidates 30 --export "https://www.linkedin.com/jobs/view/4256398535"
 ```
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### Basic Usage
 ```bash
@@ -167,7 +167,7 @@ python main.py --recruiter-name "John Smith" "https://www.linkedin.com/jobs/view
 python main.py --anthropic --max-candidates 25 --export --recruiter-name "Sarah Johnson" "https://www.linkedin.com/jobs/view/4256398535"
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### API Keys
 Edit `config.py` to set your API keys:
@@ -197,7 +197,7 @@ SCORING_WEIGHTS = {
 }
 ```
 
-## 📊 Output Format
+##  Output Format
 
 The system generates structured JSON output:
 
@@ -235,7 +235,7 @@ The system generates structured JSON output:
 }
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Input Job → Search LinkedIn → Extract Profiles → Score Fit → Generate Messages
@@ -253,7 +253,7 @@ Input Job → Search LinkedIn → Extract Profiles → Score Fit → Generate Me
 - **`job_orchestrator.py`**: Main workflow coordinator
 - **`config.py`**: Configuration and API keys
 
-## 💰 Cost Estimation
+##  Cost Estimation
 
 ### OpenAI API Costs (GPT-4):
 - **Per Message**: ~$0.01-0.05
@@ -269,7 +269,7 @@ Input Job → Search LinkedIn → Extract Profiles → Score Fit → Generate Me
 - **LinkedIn Profile Data**: Included in free tier
 - **Additional Queries**: May require subscription
 
-## 🔍 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues:
 
@@ -306,11 +306,11 @@ Input Job → Search LinkedIn → Extract Profiles → Score Fit → Generate Me
 python main.py --demo --quiet
 ```
 
-## 📝 License
+##  License
 
 This project is for educational and research purposes. Please respect LinkedIn's terms of service and use responsibly.
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -318,7 +318,7 @@ This project is for educational and research purposes. Please respect LinkedIn's
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Support
+##  Support
 
 For issues and questions:
 1. Check the troubleshooting section
